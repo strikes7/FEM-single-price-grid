@@ -1,0 +1,124 @@
+.resources, .suscription-fee, .slogan {
+  padding: 2.5rem;
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(218, 22%, 67%);
+  font-family: "Karla", sans-serif;
+}
+
+.price-grid {
+  max-width: 39.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem 0.3rem hsla(0, 0%, 20%, 0.2);
+}
+
+.slogan {
+  grid-column: 1/-1;
+  background-color: hsl(204, 43%, 93%);
+}
+.slogan__title {
+  font-size: 1.5rem;
+  color: hsl(179, 62%, 43%);
+  margin-block: 0 1.35rem;
+}
+.slogan__excerpt {
+  font-size: 1.25rem;
+  color: hsl(71, 73%, 54%);
+  margin-block: 0 1rem;
+}
+.slogan__text {
+  color: hsl(218, 22%, 67%);
+  margin-block: 0 0.5rem;
+}
+
+.suscription-fee {
+  background-color: hsl(179, 62%, 43%);
+  color: hsl(204, 43%, 93%);
+}
+.suscription-fee__title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-block: 0 0.9rem;
+}
+.suscription-fee__price {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-block: 0 0.5rem;
+}
+.suscription-fee__price--per-time {
+  margin-inline-start: 0.85rem;
+  margin-block: 0 0.5rem;
+  vertical-align: 0.4em;
+  font-size: 0.5em;
+  font-weight: 400;
+  opacity: 0.6;
+}
+.suscription-fee__text {
+  margin-block: 0 2rem;
+  font-weight: 300;
+}
+.suscription-fee__sign-in {
+  --shadow-color: hsla(0deg, 0%, 20%, 0.175);
+  display: block;
+  inline-size: 100%;
+  padding-block: 0.85rem;
+  border-radius: 0.25rem;
+  background-color: hsl(71, 73%, 54%);
+  color: hsl(204, 43%, 100%);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px hsl(71, 73%, 54%);
+  box-shadow: 0 1rem 1rem -0.5rem var(--shadow-color);
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+.suscription-fee__sign-in:focus {
+  outline: none;
+}
+.suscription-fee__sign-in:hover, .suscription-fee__sign-in:focus {
+  background-color: hsl(71, 73%, 58%);
+  transform: translateY(-5%);
+  --shadow-color: hsla(0, 0%, 20%, 0.3);
+}
+
+.resources {
+  background-color: hsl(179, 47%, 52%);
+  color: hsl(204, 43%, 93%);
+}
+.resources__title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-block: 0 0.9rem;
+}
+.resources > ul {
+  list-style: none;
+  font-weight: 300;
+  padding-inline-start: 0;
+  margin-block: 0;
+}
+
+.resource__item {
+  opacity: 0.85;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.2em;
+  color: hsl(204, 43%, 100%);
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  font-size: 0.85rem;
+  transition: opacity 0.25s linear, text-decoration-color 0.25s linear;
+}
+.resource__item:focus {
+  outline: none;
+}
+.resource__item:hover, .resource__item:focus {
+  opacity: 1;
+  text-decoration-color: inherit;
+}

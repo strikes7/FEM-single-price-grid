@@ -1,0 +1,24 @@
+@use "../abstract/" as *;
+
+.slogan {
+  grid-column: 1/-1;
+  @extend %padding-boxes;
+  background-color: $clr-bg-neutral-100;
+
+  &__title {
+    font-size: $fs-600;
+    color: $clr-primary-100;
+    margin-block: 0 1.35rem;
+  }
+
+  &__excerpt {
+    font-size: $fs-500;
+    color: $clr-primary-300;
+    margin-block: 0 1rem;
+  }
+
+  &__text {
+    color: $clr-bg-neutral-200;
+    margin-block: 0 0.5rem;
+  }
+}

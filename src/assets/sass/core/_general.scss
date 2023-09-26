@@ -1,0 +1,19 @@
+@use "../abstract/" as *;
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $clr-bg-neutral-200;
+  font-family: $ff-primary;
+}
+
+.price-grid {
+  max-width: toRem(632);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem 0.3rem hsla(0, 0%, 20%, 0.2);
+}

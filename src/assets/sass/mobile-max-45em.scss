@@ -1,0 +1,27 @@
+@use "abstract/" as *;
+
+.price-grid {
+  width: min(95%, toRem(315));
+  grid-template-columns: 1fr;
+}
+
+.slogan {
+  font-size: $fs-550;
+  @extend %padding-inline-boxes-mobile;
+
+  &__excerpt {
+    font-weight: 700;
+    font-size: $fs-400;
+  }
+
+  &__text {
+    font-size: $fs-200;
+    line-height: 1.8;
+  }
+}
+
+.suscription-fee,
+.resources {
+  @extend %padding-inline-boxes-mobile;
+  padding-block: toRem(22);
+}

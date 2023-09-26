@@ -1,0 +1,61 @@
+@use "../abstract/" as *;
+
+.suscription-fee {
+  @extend %padding-boxes;
+  background-color: $clr-primary-100;
+  color: $clr-bg-neutral-100;
+
+  &__title {
+    font-size: $fs-500;
+    font-weight: 400;
+    margin-block: 0 0.9rem;
+  }
+
+  &__price {
+    font-size: $fs-700;
+    font-weight: 700;
+    margin-block: 0 0.5rem;
+
+    &--per-time {
+      margin-inline-start: 0.85rem;
+      margin-block: 0 0.5rem;
+      vertical-align: 0.4em;
+      font-size: 0.5em;
+      font-weight: 400;
+      opacity: 0.6;
+    }
+  }
+
+  &__text {
+    margin-block: 0 2rem;
+    font-weight: 300;
+  }
+
+  &__sign-in {
+    --shadow-color: hsla(0deg, 0%, 20%, 0.175);
+    display: block;
+    inline-size: 100%;
+    padding-block: 0.85rem;
+    border-radius: 0.25rem;
+    background-color: $clr-primary-300;
+    color: $clr-bg-neutral-050;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px $clr-primary-300;
+
+    box-shadow: 0 1rem 1rem -0.5rem var(--shadow-color);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $clr-primary-350;
+      transform: translateY(-5%);
+      --shadow-color: hsla(0, 0%, 20%, 0.3);
+    }
+  }
+}
